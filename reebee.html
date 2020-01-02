@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hooman Ramezani</title>
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fixed.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+    <!--- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Hooman Ramezani</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+            <!---Navbar hamburger lines when condensed -->
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Hooman Ramezani</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#projects">case studies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#education">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#footer">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/file/d/1v4PmmIbHRBc_aIFY_4qVOiNpkkKAoJAQ/view"
+                        target="_blank">resumé</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!--- End Navigation -->
+
+    <!-- Start Nailed it Section -->
+    <div class="nailedit_landing">
+        <div class="col-12 text-center">
+            <h1 class="heading spacing-top spacing-bottom-half">reebee Inc.</h1>
+            <h4 class="heading spacing-bottom">Android Developer</h4>
+            <div class="heading-underline"></div>
+        </div>
+
+        <!-- row section -->
+        <div class="row ">
+            <div class="row spacing">
+                <div class="col-md-7">
+                    <h1>About reebee</h1>
+                    <p class="lead">reebee is a fast-growing company disrupting the flyer industry with it's digital
+                        flyer platform. During the fall 2019 I worked as an integral part of the Android team developing
+                        features and maintaining the application. I came into this position with no previous software development
+                        expierience, however I was able to quickly pick up the skills required and complete many
+                        projects which got pushed into the app.</p>
+                    <p class="lead"> Below are some features I devloped:</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/reebeeLogo.png" alt="Self-portrait" class="nailed_it_pics"></img>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>Auto Delete Expired Items</h1>
+                    <p class="lead subheading">Context:</p>
+                    <p class="lead">reebee has a shopping list feature which lets users add flyer items for convenient
+                        access when shopping.</p>
+                    <p class="lead subheading">Problem:</p>
+                    <p class="lead">For most users when the shopping list items' flyers became expired they were no 
+                        longer useful and would accumulate in the list. The user would have to manually delete these
+                        items when they wanted them removed.</p>
+                    <p class="lead subheading">Goal:</p>
+                    <p class="lead">To create a method to automate removing expired items from users shopping list.</p>
+                    <p class="lead subheading">Solution:</p>
+                    <p class="lead">The "Auto Delete Expired Items" feature adds functionality for users decide if they 
+                        would like the app to delete expired items for them and at which selected time interval. 
+                        It incorporates a check when the application initially enters the foreground to determine
+                        if there are any items expired item to be deleted based on users settings and will notify users if 
+                        it has done so, as well as an onboarding dialog teaches the user about the feature and if they'd 
+                        like to use it.</p>
+                    <p class="lead subheading">Results:</p>
+                    <p class="lead">** Insert analytics of the feature**.</p>    
+                    <a class="btn btn-outline-dark btn-lg visible spacing-top" href="" target="_blank" id="work">View Code</a>
+                </div>
+                <div class="col-md-4">
+                    <p class="subheading">Feature Demo:</p>
+                    <video controls>
+                        <source src="video/auto-delete.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="subheading">Feature Demo:</p>
+                    <video controls>
+                        <source src="video/itemoptions.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-md-8">
+                    <h1 class="spacing-left">Item Options</h1>
+                    <p class="lead subheading spacing-left">Context:</p>
+                    <p class="lead spacing-left">reebee has a shopping list feature which lets users add flyer items for convenient
+                        access when shopping.</p>
+                    <p class="lead subheading spacing-left">Problem:</p>
+                    <p class="lead spacing-left">Many users requested the ability to add and edit notes and quantity to items in their
+                        shopping list.</p>
+                    <p class="lead subheading spacing-left">Goal:</p>
+                    <p class="lead spacing-left">To create a quantity and notes section for items in the shopping list, and use the 
+                        quantity information to calculate total price of the shopping list.
+                    </p>
+                    <p class="lead subheading spacing-left">Solution:</p>
+                    <p class="lead spacing-left">The design I selected incorporates an arrow that expands and collapses the new section
+                        of an item. This dropdown contains sections to edit quantity and note for each item. When the user
+                        enters a quantity a total price for the item will be calculated. All the item totals will then be calculated 
+                        and a total price of the users shopping list can be calculated. After the user is done editing these 
+                        options they can collapse the section and it will only show information the user has edited.</p>
+                    <p class="lead subheading spacing-left">Results:</p>
+                    <p class="lead spacing-left">This feature added three major changes to the shopping list, quantity, notes and being able
+                        to provide users with a total price of their shopping list. The reebee team have wanted to add this feature
+                        based on customer feedback for some time now and these three changes greatly increase the functionality of the 
+                        shopping list.</p>   
+                    <a class="btn btn-outline-dark btn-lg visible spacing-left spacing-left" href="" target="_blank" id="work">View
+                        Code</a>
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="col-md-8 spacing-top-high">
+                <h1>Fast-Scrollbar</h1>
+                <p class="lead">Problem:</p>
+                <p class="lead">While developing a new flyer layout.</p>
+                <p class="lead subheading">Goal:</p>
+                <p class="lead">To create a custom scrollbar with a modern UI that can provide users with additional
+                    functionality to navigate to specific secitons of the list.</p>
+                <p class="lead subheading">Solution:</p>
+                <p class="lead">The fast scrollbar I implemented has all the functionality of a default Android scrollbar 
+                    with custom show and hide and scrolling functionality that make it work perfectly with the recyclerView.
+                    The bar uses the category of item's in the list to visually display all the main sections and allow users
+                    to any section.
+                </p>
+                <p class="lead subheading">Results:</p>
+                <p class="lead">.</p>    
+                <a class="btn btn-outline-dark btn-lg visible spacing-top" href="" target="_blank" id="work">View
+                    Code</a>
+            </div>
+            <div class="col-md-4">
+                <p class="subheading">Feature Demo:</p>
+                <video controls>
+                    <source src="video/fastscrollbar.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
