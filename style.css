@@ -367,16 +367,10 @@ canvas{
   border-radius: 5%;
 }
 
-.luigi {
-position: absolute;
-top: -10%;
-
+.videos {
+  width: 100%;
 }
 
-.yoshi {
-  position: relative;
-  top:46%;
-}
 .nailedit_landing {
     position: relative;
     margin-left: 12vh;
@@ -448,14 +442,97 @@ margin-bottom: 8rem;
 }
 
 .subheading {
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 0px;
+  margin-top: 1.5rem;
 }
 
 .subheading {
   font-weight: bold;
   margin-bottom: 0px;
 }
+
+.justify-text {
+  text-align: justify;
+}
+
+.key-summary {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width:90vw;
+  max-width: 1300px;
+}
+.backend {
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(157, 182, 230);
+}
+
+  #bar{
+      height: 150px;
+      width:5px;
+      background: rgba(230, 230, 230, 0.87);
+      position: relative;
+      top:50px;
+  }
+}
+.frontend {
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(193, 157, 214);
+}
+  #bar{
+      height: 150px;
+      width:5px;
+      background: rgba(230, 230, 230, 0.87);
+      position: relative;
+      top:50px;
+  }
+}
+
+.tool-card {
+
+  height: 200px;
+  width: 200px;
+  margin:20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ 
+  font-size: 120px;
+  
+}
+
+.iconify {
+ position: relative;
+ left:50px;
+}
+
+.icon-text {
+  color: #00B2FF;
+}
+
+.roles {
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(136, 196, 149);
+  width:90vw;
+  max-width: 1300px;
+
+}
+  .tool-card {
+
+      height: 200px;
+      width: 500px;
+      margin:20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+     
+      font-size: 120px;
+      
+  }
 
 /*
 svg {
