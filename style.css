@@ -441,6 +441,10 @@ margin-bottom: 8rem;
   margin-bottom: .4rem;
 }
 
+.spacing-bottom-two {
+  margin-bottom: 2rem;
+}
+
 .subheading {
   font-weight: 900;
   margin-bottom: 0px;
@@ -476,7 +480,7 @@ margin-bottom: 8rem;
       position: relative;
       top:50px;
   }
-}
+
 .frontend {
   display: flex;
   justify-content: flex-start;
@@ -489,7 +493,7 @@ margin-bottom: 8rem;
       position: relative;
       top:50px;
   }
-}
+
 
 .tool-card {
 
@@ -509,8 +513,25 @@ margin-bottom: 8rem;
  left:50px;
 }
 
-.icon-text {
-  color: #00B2FF;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center-vid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.center-text {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px; 
+  color: black;
 }
 
 .roles {
@@ -519,8 +540,8 @@ margin-bottom: 8rem;
   color: rgb(136, 196, 149);
   width:90vw;
   max-width: 1300px;
-
 }
+
   .tool-card {
 
       height: 200px;
