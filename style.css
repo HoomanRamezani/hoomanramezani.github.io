@@ -520,6 +520,13 @@ margin-bottom: 8rem;
   width: 50%;
 }
 
+.center-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
 .center-vid {
   display: block;
   margin-left: auto;
@@ -533,6 +540,10 @@ margin-bottom: 8rem;
   line-height: 45px; 
   color: black;
 }
+
+.tab { 
+  text-indent: 70px; 
+} 
 
 .roles {
   display: flex;
