@@ -436,6 +436,9 @@ margin-bottom: 8rem;
 .spacing-bottom {
   margin-bottom: 1rem;
 }
+.spacing-bottom-none {
+  margin-bottom: 0rem;
+}
 
 .spacing-bottom-half {
   margin-bottom: .4rem;
