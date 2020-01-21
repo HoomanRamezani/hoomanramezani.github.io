@@ -22,15 +22,16 @@ body a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10rem 6rem;
-}
+  padding: 10rem 6vw;
+ }
 
 #blurb {
   position:relative;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  /* top:30%; */
+  padding-left: 1rem;
+  padding-right: 1rem; */
+  /* /* top:30%; */
 }
+
 .visible {
   visibility: visible;
   opacity: 1;
