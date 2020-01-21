@@ -386,7 +386,15 @@ canvas{
   width: 100%;
 }
 
+@media (max-width: 1000px) {
+  .phone {
+    margin-left: 2vh !important;
+    margin-right: 2vh !important;
+    padding: 10px !important;
+  }
+}
 .nailedit_landing {
+  
     position: relative;
     margin-left: 12vh;
     margin-right: 8vh;
