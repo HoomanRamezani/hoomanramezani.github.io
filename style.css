@@ -286,6 +286,20 @@ margin: 0 auto 2rem;
   font-size: 1.1rem;
 }
 
+.height {
+  width: 101%;
+  height: auto;
+}
+
+.height2 {
+  width: 85%;
+  height: auto;
+}
+
+.lbj {
+  position: relative;
+  top: -35px;
+}
 
 /*-- Start of Education Section with fixed background --*/
 
