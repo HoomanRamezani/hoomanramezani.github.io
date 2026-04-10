@@ -31,13 +31,13 @@
                 <p class="name" style="text-align: center;">
                   Hooman Ramezani
                 </p>
-                <p>I'm Hooman, a machine learning engineer passionate about applications of AI. Currently I work as an AI Specialist Solutions Architect at Nebius (neo-cloud) where I'm incolved in optimizing large-cluster LLM training/inference on H100/B200/GB200 GPUs. This includes leading performance research to unblock customers running large scale training, raise MFU, and stand up large GPU clusters.
+                <p>I'm Hooman, a machine learning engineer passionate about applications of AI. Currently I work as an ML Solutions Architect at Nebius, primarily focused on working with clients to ensure best performance when migrating large-scale ML workloads onto next-generation GPUs. This includes profiling and optimizing training runs, deploying production inference endpoints, and working hands-on with the latest NVIDIA Blackwell hardware.
                 </p>
                 <p>
-                  I have completed my BASc in  <a href="https://morlab.mie.utoronto.ca/author/hooman-ramezani/">Systems Design Engineering</a> at the University of Waterloo, and my MASc at the University of Toronto with my thesis related to application of transformers for clinical workloads, including LLM and ViT models with multimodal data for lung cancer treatment.
+                  I have completed my BASc in <a href="https://morlab.mie.utoronto.ca/author/hooman-ramezani/">Systems Design Engineering</a> at the University of Waterloo, and my MASc at the University of Toronto. My thesis focused on applying transformers to clinical workloads, training LLM and ViT models on multimodal data for lung cancer treatment.
                 </p>
                 <p>
-                  I’m skilled in ML infrastructure and platform engineering, including large-scale LLM training on GPU clusters, model compression (quantization, pruning, knowledge distillation), low-latency inference deployment with Triton and TensorRT, and building robust end-to-end MLOps and data pipelines.
+                  My expertise spans GPU performance optimization across large-scale ML workloads, including CUDA-level profiling and RDMA/InfiniBand networking as well as setting up distributed training with TorchTitan. Recently I’ve spent a lot of time on inference, tuning engines like vLLM, SGLang, and TRT-LLM for best performance on specific client workloads.
                 </p>                
                 <p>
                   In my free time you can find me playing guitar. See more <a href="https://www.instagram.com/hooman_jams/?hl=en">here</a>.
@@ -59,13 +59,35 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research and Projects</h2>
                 <p>
-                  I am interested in Health AI, Machine Learning, Computer Vision. My research expierience spans previous work with the <a href="https://uwaterloo.ca/vision-image-processing-lab/">UW VIP Lab</a>, various internships, and my Masters at UofT.
+                  I am interested in large-scale ML systems, GPU performance optimization, and Health AI. My research experience spans my current work at Nebius on training and inference optimization, previous work with the <a href="https://uwaterloo.ca/vision-image-processing-lab/">UW VIP Lab</a>, and my Masters at UofT.
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-             <tr>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <img src='images/DS3.avif' width="160">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://pytorch.org/blog/enabling-up-to-41-faster-pre-training-mxfp8-and-deepep-for-deepseek-v3-on-b200-with-torchtitan/" target="_blank">
+            <span class="papertitle">Enabling Up to 41% Faster Pre-training: MXFP8 and DeepEP for DeepSeek-V3 on B200 with TorchTitan</span>
+          </a>
+          <br>
+          <strong>Hooman Ramezani</strong>, PyTorch and Nebius Teams, 2026
+          <br>
+          <a href="https://pytorch.org/blog/enabling-up-to-41-faster-pre-training-mxfp8-and-deepep-for-deepseek-v3-on-b200-with-torchtitan/" target="_blank">Blog</a> /
+          <a href="https://github.com/pytorch/torchtitan" target="_blank">TorchTitan</a> /
+          <a href="https://github.com/pytorch/ao" target="_blank">TorchAO</a> /
+          <a href="https://github.com/deepseek-ai/DeepEP" target="_blank">DeepEP</a>
+          <p>
+            Achieved 41% faster pre-training of DeepSeek-V3 671B on 256 NVIDIA B200 GPUs by combining MXFP8 (Microscaling FP8) quantized training via TorchAO with DeepEP expert-parallel communication optimization. MXFP8 leverages Blackwell's native tensor core support for up to 2x peak TFLOPS over BF16, while DeepEP replaces standard all-to-all collectives with purpose-built NVLink/RDMA kernels for MoE workloads. Throughput improved from 651 to 918 tokens/sec with no loss convergence degradation.
+          </p>
+        </td>
+      </tr>
 
       <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
