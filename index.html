@@ -80,7 +80,8 @@
           <strong>Hooman Ramezani</strong>, Nebius Team, 2026
           <br>
           <a href="https://nebius.com/blog/posts/inside-the-nebius-pytorch-deepseek-v3-recipe" target="_blank">Blog</a> /
-          <a href="https://github.com/deepseek-ai/DeepEP" target="_blank">DeepEP</a>
+          <a href="https://github.com/deepseek-ai/DeepEP" target="_blank">DeepEP</a> /
+          <a href="https://github.com/nebius/ml-cookbook/tree/main/deepep" target="_blank">Code</a>
           <p>
             In 2026 nearly every frontier model utilizes mixture-of-experts (MoE). This post overviews the communication bottlenecks of MoE training and how GPU-initiated RDMA libraries mitigate them, with a hands-on guide for running the recipe on Nebius.
           </p>
@@ -95,15 +96,14 @@
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
           <a href="https://pytorch.org/blog/enabling-up-to-41-faster-pre-training-mxfp8-and-deepep-for-deepseek-v3-on-b200-with-torchtitan/" target="_blank">
-            <span class="papertitle">Enabling Up to 41% Faster Pre-training: MXFP8 and DeepEP for DeepSeek-V3 on B200 with TorchTitan</span>
+            <span class="papertitle">PyTorch Blog: Enabling Up to 41% Faster Pre-training: MXFP8 and DeepEP for DeepSeek-V3 on B200 with TorchTitan</span>
           </a>
           <br>
           <strong>Hooman Ramezani</strong>, PyTorch and Nebius Teams, 2026
           <br>
           <a href="https://pytorch.org/blog/enabling-up-to-41-faster-pre-training-mxfp8-and-deepep-for-deepseek-v3-on-b200-with-torchtitan/" target="_blank">Blog</a> /
-          <a href="https://github.com/pytorch/torchtitan" target="_blank">TorchTitan</a> /
-          <a href="https://github.com/pytorch/ao" target="_blank">TorchAO</a> /
-          <a href="https://github.com/deepseek-ai/DeepEP" target="_blank">DeepEP</a>
+          <a href="https://github.com/nebius/ml-cookbook/tree/main/pytorch-dsv3-mxfp8" target="_blank">Open Solution</a> /
+          <a href="https://github.com/pytorch/torchtitan" target="_blank">TorchTitan</a>
           <p>
             Achieved 41% faster pre-training of DeepSeek-V3 671B on 256 NVIDIA B200 GPUs by combining MXFP8 (Microscaling FP8) quantized training via TorchAO with DeepEP expert-parallel communication optimization. MXFP8 leverages Blackwell's native tensor core support for up to 2x peak TFLOPS over BF16, while DeepEP replaces standard all-to-all collectives with purpose-built NVLink/RDMA kernels for MoE workloads. Throughput improved from 651 to 918 tokens/sec with no loss convergence degradation.
           </p>
