@@ -133,3 +133,47 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+/* Phones: stack the photo above the bio and each thumbnail above its text */
+@media (max-width: 600px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  table, tbody, tr, td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  td {
+    padding: 8px 16px !important;
+  }
+
+  tr.intro {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  td.photo img {
+    display: block;
+    width: 55% !important;
+    margin: 16px auto 0;
+  }
+
+  .projects tr {
+    padding: 12px 0;
+  }
+
+  .one {
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+
+  .one img {
+    width: 100%;
+    max-width: 320px;
+  }
+}

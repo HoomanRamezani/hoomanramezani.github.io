@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
+
   </head>
 
   <body>
@@ -26,7 +26,7 @@
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
+            <tr class="intro" style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Hooman Ramezani
@@ -34,11 +34,11 @@
                 <p>I'm Hooman, a machine learning engineer passionate about applications of AI. Currently I work as an ML Solutions Architect at Nebius, primarily focused on working with clients to ensure best performance when migrating large-scale ML workloads onto next-generation GPUs. This includes profiling and optimizing training runs, deploying production inference endpoints, and working hands-on with the latest NVIDIA Blackwell hardware.
                 </p>
                 <p>
-                  I have completed my BASc in <a href="https://morlab.mie.utoronto.ca/author/hooman-ramezani/">Systems Design Engineering</a> at the University of Waterloo, and my MASc at the University of Toronto. My thesis focused on applying transformers to clinical workloads, training LLM and ViT models on multimodal data for lung cancer treatment.
+                  I have completed my BASc in <a href="https://uwaterloo.ca/systems-design-engineering/">Systems Design Engineering</a> at the University of Waterloo, and my MASc at the University of Toronto. My thesis focused on applying transformers to clinical workloads, training LLM and ViT models on multimodal data for lung cancer treatment.
                 </p>
                 <p>
                   My expertise spans GPU performance optimization across large-scale ML workloads, including CUDA-level profiling and RDMA/InfiniBand networking as well as setting up distributed training with TorchTitan. Recently I’ve spent a lot of time on inference, tuning engines like vLLM, SGLang, and TRT-LLM for best performance on specific client workloads.
-                </p>                
+                </p>
                 <p>
                   In my free time you can find me playing guitar. See more <a href="https://www.instagram.com/hooman_jams/?hl=en">here</a>.
                 </p>
@@ -49,12 +49,12 @@
                   <a href="https://github.com/HoomanRamezani/" target="_blank">Github</a>
                 </p>
               </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
+              <td class="photo" style="padding:2.5%;width:40%;max-width:40%">
                 <img style="width:100%;max-width:100%;border-radius:50%;aspect-ratio:1/1;object-fit:cover" alt="profile photo" src="images/hr.jpg" class="hoverZoomLink">
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate5;margin-right:auto;margin-left:auto;"><tbody>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research and Projects</h2>
@@ -64,12 +64,12 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="projects" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
       <tr>
         <td style="padding:20px;width:28%;vertical-align:middle">
           <div class="one">
-            <img src='images/nebius_weka.png' width="190">
+            <img src='images/weka_amg.png' width="190" alt="Time-to-first-token chart, shared KV cache vs HBM-only">
           </div>
         </td>
         <td style="padding:20px;width:72%;vertical-align:middle">
@@ -82,7 +82,7 @@
           <a href="https://nebius.com/blog/posts/nebius-weka-shared-kv-cache-benchmark-hgx-b300" target="_blank">Nebius Blog</a> /
           <a href="https://www.weka.io/article/benchmarking-weka-on-nebius-ai-cloud" target="_blank">WEKA Blog</a>
           <p>
-            Led Nebius's benchmarking in a joint study with WEKA on how sharing KV cache across inference replicas speeds up agentic workloads, from building the B300 test bed and methodology (cache capacity sweeps, cross-node cache sharing, InfiniBand/RDMA analysis) to the published results. Serving DeepSeek-V4-Pro with vLLM and replaying 512 concurrent agentic coding sessions over 8 hours, the shared cache served 2.4x more requests on the same GPUs, raised cache hit rate from 40% to 93%, cut median time-to-first-token 5.4x and delivered 3.7x more output tokens per GPU-hour.
+            Led Nebius's benchmarking with WEKA on NVIDIA B300s: one KV cache shared by every inference server, instead of a private one each. The result was 2.4x more AI-agent requests on the same GPUs, with a 5.4x faster first token.
           </p>
         </td>
       </tr>
@@ -90,7 +90,7 @@
       <tr>
         <td style="padding:20px;width:28%;vertical-align:middle">
           <div class="one">
-            <img src='images/deepep.png' width="190">
+            <img src='images/deepep.png' width="190" alt="Sparse mixture-of-experts diagram">
           </div>
         </td>
         <td style="padding:20px;width:72%;vertical-align:middle">
@@ -112,7 +112,7 @@
       <tr>
         <td style="padding:20px;width:28%;vertical-align:middle">
           <div class="one">
-            <img src='images/DS3.avif' width="190">
+            <img src='images/ds3_throughput.png' width="190" alt="DeepSeek-V3 throughput: 651 to 918 tokens/sec">
           </div>
         </td>
         <td style="padding:20px;width:72%;vertical-align:middle">
@@ -134,7 +134,7 @@
       <tr>
         <td style="padding:20px;width:28%;vertical-align:middle">
           <div class="one">
-            <img src='images/lnt.png' width="190">
+            <img src='images/lnt.png' width="190" alt="LN-Transformer architecture">
           </div>
         </td>
         <td style="padding:20px;width:72%;vertical-align:middle">
@@ -150,12 +150,12 @@
             Published at CVPR 2025, a novel two-stage transformer for lung nodule segmentation. Strongest model on benchmark dataset with Dice 91.4%, F1 94.2%, combining Meta SAM and DETR architectures.
           </p>
         </td>
+      </tr>
 
-
-        <tr>
+      <tr>
         <td style="padding:20px;width:28%;vertical-align:middle">
           <div class="one">
-            <img src='images/lung.png' width="190">
+            <img src='images/lung.png' width="190" alt="Lung CT scan with detected nodule">
           </div>
         </td>
         <td style="padding:20px;width:72%;vertical-align:middle">
@@ -163,60 +163,61 @@
             <span class="papertitle">Lung-DETR: Deformable Detection Transformer for Sparse Lung Nodule Anomaly Detection</span>
           </a>
           <br>
-          <strong>Hooman Ramezani</strong>, Dionne Aleman, Daniel Letourneau, arXiv, 2024
+          <strong>Hooman Ramezani</strong>, Dionne Aleman, Daniel Létourneau, arXiv, 2024
           <br>
           <a href="https://www.arxiv.org/abs/2409.05200" target="_blank">arXiv</a>
           <p>
-          A novel architecture based to detect lung tumor, specifically designed to mitigate extreme class imbalance and find tumors among vastly health tissue.
+            A novel architecture to detect lung tumors, designed to handle extreme class imbalance and find tumors among vast amounts of healthy tissue.
           </p>
         </td>
-        
-        <tr>
-        <td style="padding:20px;width:28%;vertical-align:middle">
-          <div class="one">
-            <img src='images/iba.png' width="190">
-          </div>
-        </td>
-        <td style="padding:20px;width:72%;vertical-align:middle">
-          <a href="data/Parkinsons-FOG-Net.pdf" target="_blank">
-            <span class="papertitle">Enhancing DL Interpretability: IBA for Transformer Attribution</span>
-          </a>
-          <br>
-          <strong>Hooman Ramezani</strong>,
-          <em>University of Toronto </em>,  2024 &nbsp
-          <br>
-          <a href="data/iba.pdf">Paper</a> / 
-          <a href="data/iba_p.pdf">Presentation</a>
-          <p>
-          Information Bottleneck Attribution (IBA) leverages principles from information theory to identify critical information in neural networks for decision-making attribution. In this work IBA is successfully applied to CNN and Transformer models, enabling a detailed analysis of model decision-making.
-          </p>
-        </td>
-          
-        <tr>
-          <td style="padding:20px;width:28%;vertical-align:middle">
-            <div class="one">
-              <img src='images/FOGVis.png' width="190">
-            </div>
-          </td>
-          <td style="padding:20px;width:72%;vertical-align:middle">
-            <a href="data/Parkinsons-FOG-Net.pdf" target="_blank">
-              <span class="papertitle">Parkinsons Freezing of Gait Detection</span>
-            </a>
-            <br>
-            <strong>Hooman Ramezani</strong>,  <em>Medical Time Series Deep Learning</em>,  2023
-            <br>
-            <a href="data/Parkinsons-FOG-Net.pdf" target="_blank">Paper</a>
-            /
-            <a href="https://github.com/HoomanRamezani/parkinsons-fog-net" target="_blank">Github</a>
-            <p>
-            A deep learning network for time-series analysis designed to identify gait freezing in patients with Parkinson's disease, utilizing biometric signals for the prevention of falls.
-            </p>
-        </td>
+      </tr>
 
       <tr>
         <td style="padding:20px;width:28%;vertical-align:middle">
           <div class="one">
-            <img src='images/maze.gif' width="190">
+            <img src='images/iba.png' width="190" alt="Information bottleneck attribution heatmap">
+          </div>
+        </td>
+        <td style="padding:20px;width:72%;vertical-align:middle">
+          <a href="data/iba.pdf" target="_blank">
+            <span class="papertitle">Enhancing DL Interpretability: IBA for Transformer Attribution</span>
+          </a>
+          <br>
+          <strong>Hooman Ramezani</strong>, <em>University of Toronto</em>, 2024
+          <br>
+          <a href="data/iba.pdf" target="_blank">Paper</a> /
+          <a href="data/iba_p.pdf" target="_blank">Presentation</a>
+          <p>
+            Information Bottleneck Attribution (IBA) leverages principles from information theory to identify critical information in neural networks for decision-making attribution. In this work IBA is successfully applied to CNN and Transformer models, enabling a detailed analysis of model decision-making.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:28%;vertical-align:middle">
+          <div class="one">
+            <img src='images/FOGVis.png' width="190" alt="Gait sensor signals">
+          </div>
+        </td>
+        <td style="padding:20px;width:72%;vertical-align:middle">
+          <a href="data/Parkinsons-FOG-Net.pdf" target="_blank">
+            <span class="papertitle">Parkinson's Freezing of Gait Detection</span>
+          </a>
+          <br>
+          <strong>Hooman Ramezani</strong>, <em>Medical Time Series Deep Learning</em>, 2023
+          <br>
+          <a href="data/Parkinsons-FOG-Net.pdf" target="_blank">Paper</a> /
+          <a href="https://github.com/HoomanRamezani/parkinsons-fog-net" target="_blank">Github</a>
+          <p>
+            A deep learning network for time-series analysis designed to identify gait freezing in patients with Parkinson's disease, utilizing biometric signals for the prevention of falls.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:28%;vertical-align:middle">
+          <div class="one">
+            <img src='images/maze.gif' width="190" alt="Maze pathfinding animation">
           </div>
         </td>
         <td style="padding:20px;width:72%;vertical-align:middle">
@@ -224,20 +225,20 @@
             <span class="papertitle">Rat-Brain-Inspired Reinforcement Learning for Optimal Pathfinding in Mazes</span>
           </a>
           <br>
-          <strong>Hooman Ramezani</strong>,  Computational Neuroscience,  2023
+          <strong>Hooman Ramezani</strong>, Computational Neuroscience, 2023
           <br>
-          <a href="data/rl-maze-pathfinding.pdf" target="_blank">Paper</a>
-          /
+          <a href="data/rl-maze-pathfinding.pdf" target="_blank">Paper</a> /
           <a href="https://github.com/HoomanRamezani/rl-maze-pathfinding" target="_blank">Github</a>
           <p>
-          A deep reinforcement learning model inspired by the basal ganglia of mouse brains, designed to master maze navigation using Q-learning. It showcases the intricacies of decision-making and learning as the model identifies optimal paths through mazes.
+            A deep reinforcement learning model inspired by the basal ganglia of mouse brains, designed to master maze navigation using Q-learning. It showcases the intricacies of decision-making and learning as the model identifies optimal paths through mazes.
           </p>
         </td>
+      </tr>
 
       <tr>
         <td style="padding:20px;width:28%;vertical-align:middle">
           <div class="one">
-            <img src='images/grasps.png' width="190">
+            <img src='images/grasps.png' width="190" alt="Predicted grasp points on household objects">
           </div>
         </td>
         <td style="padding:20px;width:72%;vertical-align:middle">
@@ -245,33 +246,38 @@
             <span class="papertitle">Grasp-Proposition-Net: Robotic Vision For Grasping Everyday Objects</span>
           </a>
           <br>
-          <strong>Hooman Ramezani</strong>,
-          <em>UW VIP Lab </em>,  2022 &nbsp
+          <strong>Hooman Ramezani</strong>, <em>UW VIP Lab</em>, 2022
           <br>
-          <a href="https://github.com/HoomanRamezani/grasp-proposition-net">Github</a>
+          <a href="https://github.com/HoomanRamezani/grasp-proposition-net" target="_blank">Github</a>
           <p>
-          Developed a 3D computer vision model with VIP-Lab and Festo for a robotic arm, designed to determine optimal grasp points using LiDAR camera data.
+            Developed a 3D computer vision model with VIP-Lab and Festo for a robotic arm, designed to determine optimal grasp points using LiDAR camera data.
           </p>
         </td>
+      </tr>
 
       <tr>
         <td style="padding:20px;width:28%;vertical-align:middle">
           <div class="one">
-            <img src='images/abr.png' width="190">
+            <img src='images/abr.png' width="190" alt="Applied Brain Research logo">
           </div>
         </td>
         <td style="padding:20px;width:72%;vertical-align:middle">
-          <a href="data/Parkinsons-FOG-Net.pdf" target="_blank">
+          <a href="https://github.com/HoomanRamezani/drone-defect-detection" target="_blank">
             <span class="papertitle">Drone-Aided Surface Defect Detection</span>
           </a>
           <br>
-          <strong>Hooman Ramezani</strong>,  <em>Applied Brain Research</em>,  Vision Model with Temporal Context,  2021
+          <strong>Hooman Ramezani</strong>, <em>Applied Brain Research</em>, Vision Model with Temporal Context, 2021
           <br>
           <a href="https://github.com/HoomanRamezani/drone-defect-detection" target="_blank">Github</a>
           <p>
-          A highly accurate embedded model for classifying surface defects via drones, utilizing a convolutional-RNN architecture and synthetic data generation. Model is optimized for on-device execution in real-world applications.
+            A highly accurate embedded model for classifying surface defects via drones, utilizing a convolutional-RNN architecture and synthetic data generation. Model is optimized for on-device execution in real-world applications.
           </p>
         </td>
-    </table>
+      </tr>
+
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
   </body>
 </html>
