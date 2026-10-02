@@ -82,7 +82,7 @@
           <a href="https://nebius.com/blog/posts/nebius-weka-shared-kv-cache-benchmark-hgx-b300" target="_blank">Nebius Blog</a> /
           <a href="https://www.weka.io/article/benchmarking-weka-on-nebius-ai-cloud" target="_blank">WEKA Blog</a>
           <p>
-            Led Nebius's benchmarking with WEKA on NVIDIA B300s: one KV cache shared by every inference server, instead of a private one each. The result was 2.4x more AI-agent requests on the same GPUs, with a 5.4x faster first token.
+            Led Nebius's evaluation of a distributed caching layer that gives every GPU server a shared memory of past context, ideal for AI agents working through long, multi-step tasks. On NVIDIA B300s it served 2.4x more requests on the same hardware, with a 5.4x faster first token.
           </p>
         </td>
       </tr>
@@ -126,7 +126,7 @@
           <a href="https://github.com/nebius/ml-cookbook/tree/main/pytorch-dsv3-mxfp8" target="_blank">Open Solution</a> /
           <a href="https://github.com/pytorch/torchtitan" target="_blank">TorchTitan</a>
           <p>
-            Achieved 41% faster pre-training of DeepSeek-V3 671B on 256 NVIDIA B200 GPUs by combining MXFP8 (Microscaling FP8) quantized training via TorchAO with DeepEP expert-parallel communication optimization. MXFP8 leverages Blackwell's native tensor core support for up to 2x peak TFLOPS over BF16, while DeepEP replaces standard all-to-all collectives with purpose-built NVLink/RDMA kernels for MoE workloads. Throughput improved from 651 to 918 tokens/sec with no loss convergence degradation.
+            Made DeepSeek-V3, a 671B-parameter frontier model, pre-train 41% faster on the same 256 NVIDIA B200 GPUs, with no loss in model quality. The unlock: Blackwell-native MXFP8 low-precision training, plus DeepEP kernels purpose-built for mixture-of-experts communication.
           </p>
         </td>
       </tr>
