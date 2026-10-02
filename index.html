@@ -69,20 +69,20 @@
       <tr>
         <td style="padding:20px;width:28%;vertical-align:middle">
           <div class="one">
-            <img src='images/weka_amg.png' width="190">
+            <img src='images/nebius_weka.png' width="190">
           </div>
         </td>
         <td style="padding:20px;width:72%;vertical-align:middle">
-          <a href="https://www.weka.io/article/benchmarking-weka-on-nebius-ai-cloud" target="_blank">
-            <span class="papertitle">WEKA Blog: Benchmarking WEKA's Augmented Memory Grid on Nebius AI Cloud</span>
+          <a href="https://nebius.com/blog/posts/nebius-weka-shared-kv-cache-benchmark-hgx-b300" target="_blank">
+            <span class="papertitle">Distributed KV Cache for Agentic Inference on NVIDIA HGX B300</span>
           </a>
           <br>
-          Ford Shaper, Anton Bykov, Alexey Averin, <strong>Hooman Ramezani</strong>, WEKA and Nebius Teams, 2026
+          <strong>Hooman Ramezani</strong>, Nebius and WEKA Teams, 2026
           <br>
-          <a href="https://www.weka.io/article/benchmarking-weka-on-nebius-ai-cloud" target="_blank">Blog</a> /
-          <a href="https://github.com/weka/wekai" target="_blank">Replay Benchmark</a>
+          <a href="https://nebius.com/blog/posts/nebius-weka-shared-kv-cache-benchmark-hgx-b300" target="_blank">Nebius Blog</a> /
+          <a href="https://www.weka.io/article/benchmarking-weka-on-nebius-ai-cloud" target="_blank">WEKA Blog</a>
           <p>
-            Inference engines cache KV locally, but that cache is small and private to each replica. WEKA's Augmented Memory Grid adds a persistent, distributed KV cache shared by all replicas. Replaying 512 concurrent agentic coding sessions with DeepSeek-V4-Pro on NVIDIA HGX B300, it served 2.4x more requests on the same hardware than HBM-only, with 5.4x lower median time-to-first-token and 3.7x more output tokens per GPU-hour.
+            Led Nebius's benchmarking in a joint study with WEKA on how sharing KV cache across inference replicas speeds up agentic workloads, from building the B300 test bed and methodology (cache capacity sweeps, cross-node cache sharing, InfiniBand/RDMA analysis) to the published results. Serving DeepSeek-V4-Pro with vLLM and replaying 512 concurrent agentic coding sessions over 8 hours, the shared cache served 2.4x more requests on the same GPUs, raised cache hit rate from 40% to 93%, cut median time-to-first-token 5.4x and delivered 3.7x more output tokens per GPU-hour.
           </p>
         </td>
       </tr>
