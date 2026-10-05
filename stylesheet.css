@@ -81,12 +81,18 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #222;
+}
+
+a {
+  color: #1772d0;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 h2 {
@@ -98,7 +104,7 @@ h2 {
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -109,10 +115,30 @@ h2 {
   font-size: 32px;
 }
 
+/* Project thumbnails: same 190x150 frame for every entry, image centered in it */
 .one {
-  width: 160px;
-  height: 160px;
-  position: relative;
+  width: 190px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 6px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  padding: 10px 0 30px;
 }
 
 .two {
@@ -167,13 +193,12 @@ span.highlight {
   }
 
   .one {
-    width: auto;
+    width: 100%;
     height: auto;
-    text-align: center;
   }
 
   .one img {
-    width: 100%;
     max-width: 320px;
+    max-height: 220px;
   }
 }

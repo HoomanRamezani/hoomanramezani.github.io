@@ -12,10 +12,20 @@
     </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Hooman Ramezani</title>
+    <title>Hooman Ramezani · ML Specialist Solutions Architect at Nebius</title>
 
     <meta name="author" content="Hooman Ramezani">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hooman Ramezani, ML Specialist Solutions Architect at Nebius. GPU performance for large-scale training and inference on NVIDIA Blackwell.">
+    <link rel="canonical" href="https://www.hoomanramezani.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hoomanramezani.com/">
+    <meta property="og:title" content="Hooman Ramezani">
+    <meta property="og:description" content="ML Specialist Solutions Architect at Nebius. GPU performance for large-scale training and inference on NVIDIA Blackwell.">
+    <meta property="og:image" content="https://www.hoomanramezani.com/images/og-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
@@ -31,13 +41,14 @@
                 <p class="name" style="text-align: center;">
                   Hooman Ramezani
                 </p>
-                <p>I'm Hooman, a machine learning engineer passionate about applications of AI. Currently I work as an ML Solutions Architect at Nebius, primarily focused on working with clients to ensure best performance when migrating large-scale ML workloads onto next-generation GPUs. This includes profiling and optimizing training runs, deploying production inference endpoints, and working hands-on with the latest NVIDIA Blackwell hardware.
+                <p>
+                  I'm Hooman, an ML Specialist Solutions Architect at Nebius. I work with clients to get the best performance when migrating large-scale ML workloads onto next-generation GPUs, profiling and optimizing training runs and tuning inference engines like vLLM and SGLang on NVIDIA B300 and GB300 clusters.
                 </p>
                 <p>
-                  I have completed my BASc in <a href="https://uwaterloo.ca/systems-design-engineering/">Systems Design Engineering</a> at the University of Waterloo, and my MASc at the University of Toronto. My thesis focused on applying transformers to clinical workloads, training LLM and ViT models on multimodal data for lung cancer treatment.
+                  My expertise spans GPU performance optimization across large-scale ML workloads, including CUDA-level profiling, kernel and memory optimization, low-precision compute, and multi-node communication. Recently I co-authored a joint blog post with Meta's PyTorch team on 41% faster DeepSeek-V3 pre-training, presented at NVIDIA GTC 2026.
                 </p>
                 <p>
-                  My expertise spans GPU performance optimization across large-scale ML workloads, including CUDA-level profiling and RDMA/InfiniBand networking as well as setting up distributed training with TorchTitan. Recently I’ve spent a lot of time on inference, tuning engines like vLLM, SGLang, and TRT-LLM for best performance on specific client workloads.
+                  Before Nebius, I did my BASc in <a href="https://uwaterloo.ca/systems-design-engineering/">Systems Design Engineering</a> at the University of Waterloo and my MASc at the University of Toronto. My master's thesis research focused on training small transformers for clinical segmentation and detection, with first-author work published at CVPR.
                 </p>
                 <p>
                   In my free time you can find me playing guitar. See more <a href="https://www.instagram.com/hooman_jams/?hl=en">here</a>.
@@ -46,7 +57,7 @@
                   <a href="mailto:hooman125@gmail.com" target="_blank">Email</a> &nbsp;/&nbsp;
                   <a href="data/hooman.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/hoomanramezani/" target="_blank">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/HoomanRamezani/" target="_blank">Github</a>
+                  <a href="https://github.com/HoomanRamezani/" target="_blank">GitHub</a>
                 </p>
               </td>
               <td class="photo" style="padding:2.5%;width:40%;max-width:40%">
@@ -59,7 +70,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research and Projects</h2>
                 <p>
-                  I am interested in large-scale ML systems, GPU performance optimization, and Health AI. My research experience spans my current work at Nebius on training and inference optimization, previous work with the <a href="https://uwaterloo.ca/vision-image-processing-lab/">UW VIP Lab</a>, and my Masters at UofT.
+                  I am interested in large-scale ML systems, GPU performance optimization, and AI for healthcare applications. My research experience spans my current work at Nebius on training and inference optimization, previous work with the <a href="https://uwaterloo.ca/vision-image-processing-lab/">UW VIP Lab</a>, and my master's thesis research at UofT.
                 </p>
               </td>
             </tr>
@@ -73,16 +84,16 @@
           </div>
         </td>
         <td style="padding:20px;width:72%;vertical-align:middle">
-          <a href="https://nebius.com/blog/posts/nebius-weka-shared-kv-cache-benchmark-hgx-b300" target="_blank">
-            <span class="papertitle">Distributed KV Cache for Agentic Inference on NVIDIA HGX B300</span>
+          <a href="https://www.weka.io/article/benchmarking-weka-on-nebius-ai-cloud" target="_blank">
+            <span class="papertitle">Distributed KV Cache for AI Agents: 2.4x More Requests on NVIDIA B300</span>
           </a>
           <br>
           <strong>Hooman Ramezani</strong>, Alexey Averin, Ford Shaper, Anton Bykov, 2026
           <br>
-          <a href="https://nebius.com/blog/posts/nebius-weka-shared-kv-cache-benchmark-hgx-b300" target="_blank">Nebius Blog</a> /
-          <a href="https://www.weka.io/article/benchmarking-weka-on-nebius-ai-cloud" target="_blank">WEKA Blog</a>
+          <a href="https://www.weka.io/article/benchmarking-weka-on-nebius-ai-cloud" target="_blank">WEKA Blog</a> /
+          <a href="https://nebius.com/blog/posts/nebius-weka-shared-kv-cache-benchmark-hgx-b300" target="_blank">Nebius Blog</a>
           <p>
-            Led the Nebius side of bringing a distributed KV cache to market as a product on Nebius AI Cloud, giving every GPU server a shared memory of past context for AI agents. On NVIDIA B300s it served 2.4x more requests on the same hardware, with a 5.4x faster first token.
+            Led the Nebius side of bringing a distributed KV cache to market as a product on Nebius AI Cloud, giving every GPU server a shared memory of past context for AI agents. On NVIDIA B300 GPUs it served 2.4x more requests on the same hardware, with a 5.4x faster first token.
           </p>
         </td>
       </tr>
@@ -104,7 +115,7 @@
           <a href="https://github.com/nebius/ml-cookbook/tree/main/deepep" target="_blank">Open Solution</a> /
           <a href="https://github.com/deepseek-ai/DeepEP" target="_blank">DeepEP</a>
           <p>
-            In 2026 nearly every frontier model utilizes mixture-of-experts (MoE). This post overviews the communication bottlenecks of MoE training and how GPU-initiated RDMA libraries mitigate them, with a hands-on guide for running the recipe on Nebius.
+            Authored Nebius's deep dive on why mixture-of-experts training gets bottlenecked by GPU-to-GPU communication, and how GPU-initiated RDMA with NVSHMEM and DeepEP fixes it. Includes an open-source recipe to run it on Nebius.
           </p>
         </td>
       </tr>
@@ -207,7 +218,7 @@
           <strong>Hooman Ramezani</strong>, <em>Medical Time Series Deep Learning</em>, 2023
           <br>
           <a href="data/Parkinsons-FOG-Net.pdf" target="_blank">Paper</a> /
-          <a href="https://github.com/HoomanRamezani/parkinsons-fog-net" target="_blank">Github</a>
+          <a href="https://github.com/HoomanRamezani/parkinsons-fog-net" target="_blank">GitHub</a>
           <p>
             A deep learning network for time-series analysis designed to identify gait freezing in patients with Parkinson's disease, utilizing biometric signals for the prevention of falls.
           </p>
@@ -228,7 +239,7 @@
           <strong>Hooman Ramezani</strong>, Computational Neuroscience, 2023
           <br>
           <a href="data/rl-maze-pathfinding.pdf" target="_blank">Paper</a> /
-          <a href="https://github.com/HoomanRamezani/rl-maze-pathfinding" target="_blank">Github</a>
+          <a href="https://github.com/HoomanRamezani/rl-maze-pathfinding" target="_blank">GitHub</a>
           <p>
             A deep reinforcement learning model inspired by the basal ganglia of mouse brains, designed to master maze navigation using Q-learning. It showcases the intricacies of decision-making and learning as the model identifies optimal paths through mazes.
           </p>
@@ -248,7 +259,7 @@
           <br>
           <strong>Hooman Ramezani</strong>, <em>UW VIP Lab</em>, 2022
           <br>
-          <a href="https://github.com/HoomanRamezani/grasp-proposition-net" target="_blank">Github</a>
+          <a href="https://github.com/HoomanRamezani/grasp-proposition-net" target="_blank">GitHub</a>
           <p>
             Developed a 3D computer vision model with VIP-Lab and Festo for a robotic arm, designed to determine optimal grasp points using LiDAR camera data.
           </p>
@@ -268,7 +279,7 @@
           <br>
           <strong>Hooman Ramezani</strong>, <em>Applied Brain Research</em>, Vision Model with Temporal Context, 2021
           <br>
-          <a href="https://github.com/HoomanRamezani/drone-defect-detection" target="_blank">Github</a>
+          <a href="https://github.com/HoomanRamezani/drone-defect-detection" target="_blank">GitHub</a>
           <p>
             A highly accurate embedded model for classifying surface defects via drones, utilizing a convolutional-RNN architecture and synthetic data generation. Model is optimized for on-device execution in real-world applications.
           </p>
@@ -276,6 +287,7 @@
       </tr>
 
           </tbody></table>
+          <p class="footer">Last updated October 2026</p>
         </td>
       </tr>
     </tbody></table>
